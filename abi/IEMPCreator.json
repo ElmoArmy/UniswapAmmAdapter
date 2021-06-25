@@ -1,0 +1,10 @@
+[
+  "constructor(address _finderAddress, address _tokenFactoryAddress, address _timerAddress)",
+  "event CreatedExpiringMultiParty(address indexed expiringMultiPartyAddress, address indexed deployerAddress)",
+  "function _getSyntheticDecimals(address _collateralAddress) view returns (uint8 decimals)",
+  "function createExpiringMultiParty(tuple(uint256 expirationTimestamp, address collateralAddress, bytes32 priceFeedIdentifier, string syntheticName, string syntheticSymbol, tuple(uint256 rawValue) collateralRequirement, tuple(uint256 rawValue) disputeBondPercentage, tuple(uint256 rawValue) sponsorDisputeRewardPercentage, tuple(uint256 rawValue) disputerDisputeRewardPercentage, tuple(uint256 rawValue) minSponsorTokens, uint256 withdrawalLiveness, uint256 liquidationLiveness, address financialProductLibraryAddress) params) returns (address)",
+  "function getCurrentTime() view returns (uint256)",
+  "function setCurrentTime(uint256 time)",
+  "function timerAddress() view returns (address)",
+  "function tokenFactoryAddress() view returns (address)"
+]
